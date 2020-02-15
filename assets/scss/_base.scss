@@ -1,0 +1,132 @@
+// basic settings
+ul{
+  list-style: none;
+}
+
+.small-title{
+  text-align: center;
+}
+
+// wrapper settings
+.wrapper{
+  background-color: $dark-black;
+  color: $light-gray;
+}
+
+// header settings 
+header{
+  nav{
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: $deep-black;
+    
+    text-align: center;
+
+    a.n-brand{
+      font-family: 'Muli', sans-serif;
+      font-size: 1.5em;
+      font-weight: 700;
+      color: $tokiwa;
+      text-decoration: none;
+    }
+
+    span.tokiwa-version{
+      position: absolute;
+      right: 100px;
+    }
+  }
+}
+
+// container settings
+.container{
+  width: 95%;
+  margin: 10px auto;
+
+  font-family: 'Muli', 'M PLUS 1p', sans-serif;
+
+  @include bp(lg){
+    width: 55%;
+  }
+}
+
+// components settings
+li.music-list-item{
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: $deeper-black;
+
+  .item-info{
+    position: relative;
+
+    .item-version{
+      display: inline-block;
+      width: 20px;
+    }
+
+    .item-name{
+      display: inline-block;
+    }
+
+    .item-diff{
+      display: inline-block;
+      margin: 0 8px;
+      font-weight: 700;
+    }
+
+    .label-hyper{
+      color: $hyper;
+    }
+
+    .label-another{
+      color: $another;
+    }
+
+    .label-leggendaria{
+      color: $leggendaria;
+    }
+  }
+
+  .item-use-option{
+    margin: 5px 0;
+
+    .option-disp-box{
+      display: inline-block;
+      width: 46%;
+      height: 100px;
+      margin: 0 2%;
+      border-radius: 10px;
+      background-color: $dark-blue;
+      text-align: center;
+
+      .option-disp-side{
+        position: relative;
+        color: $dark-gray;
+      }
+
+      .option-disp-side:before{
+        content: '';
+        position: absolute;
+        display: inline-block;
+        left: 50%;
+        bottom: -2px;
+        width: 100px;
+        height: 1px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: $dark-gray;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+footer{
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+
+  .copyright{
+    padding: 20px;
+    color: $tokiwa;
+  }
+}

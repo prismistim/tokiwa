@@ -23,30 +23,17 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/scss/style.scss'
   ],
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
-  /*
-  ** Nuxt.js dev-modules
-  */
-  buildModules: [
-  ],
-  /*
-  ** Nuxt.js modules
-  */
   modules: [
+    '@nuxtjs/pwa'
   ],
-  /*
-  ** Build configuration
-  */
-  build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
+  pwa: {
+    manifest: {
+      name: 'tokiwa',
+      title: 'tokiwa',
+      lang: 'ja',
+      scope: '/',
     }
   }
 }
