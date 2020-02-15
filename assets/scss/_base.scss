@@ -1,10 +1,41 @@
 // basic settings
+body{
+  background-color: $dark-black!important;
+}
+
 ul{
   list-style: none;
+  padding: 0!important;
 }
 
 .small-title{
   text-align: center;
+}
+
+.badge{
+  margin-top: 5px;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.badge-mirror{
+  border: solid 1px $light-left;
+  background-color: $left;
+}
+
+.badge-ran{
+  border: solid 1px $light-left;
+  background-color: $left;
+}
+
+.badge-sran{
+  border: solid 1px $light-left;
+  background-color: $left;
+}
+
+.badge-rran{
+  border: solid 1px $light-left;
+  background-color: $left;
 }
 
 // wrapper settings
@@ -92,8 +123,9 @@ li.music-list-item{
 
     .option-disp-box{
       display: inline-block;
+      vertical-align: top;
       width: 46%;
-      height: 100px;
+      min-height: 70px;
       margin: 0 2%;
       border-radius: 10px;
       background-color: $dark-blue;

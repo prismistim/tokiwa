@@ -2,10 +2,19 @@
   ul.music-list
     MusicListItem(
       v-for = 'item in editList'
-      v-bind:id = 'item.ID'
-      v-bind:version = 'item.VER'
-      v-bind:music_name = 'item.MUSIC_NAME'
-      v-bind:difficulty = 'item.DIFFICULTY'
+      :id = 'item.ID'
+      :version = 'item.VER'
+      :music_name = 'item.MUSIC_NAME'
+      :difficulty = 'item.DIFFICULTY'
+      :flip = 'item.FLIP'
+      :mirror_l = 'item.MIRROR_L'
+      :mirror_r = 'item.MIRROR_R'
+      :ran_l = 'item.RAN_L'
+      :ran_r = 'item.RAN_R'
+      :sran_l = 'item.SRAM_L'
+      :sran_r = 'item.SRAM_R'
+      :rran_l = 'item.RRAM_L'
+      :rran_r = 'item.RRAM_R'
       :key = 'item.ID'
     )
 </template>
