@@ -158,9 +158,12 @@ li.music-list-item{
       width: 100%;
       border-collapse: collapse;
 
+      tr:nth-of-type(n+2){
+        border-top: solid 2px $deeper-black;
+      }
+
       tr{
         height: 50px;
-        border-top: solid 2px $deeper-black;
 
         th{
           width: 10%;
