@@ -3,6 +3,10 @@ body{
   background-color: $dark-black!important;
 }
 
+a:hover{
+  text-decoration: none;
+}
+
 ul{
   list-style: none;
   padding: 0!important;
@@ -38,6 +42,34 @@ ul{
 
 .badge-rran{
   background-color: $rran;
+}
+
+a.banner{
+  display: block;
+  width: 80%;
+  height: 80px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: $tokiwa;
+  color: #fff;
+
+  .banner-text{
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+}
+
+a.banner:hover{
+  transition: ease-in-out 0.2s;
+  background-color: $deeper-black;
+  color: $tokiwa;
+  text-decoration: none;
+}
+
+ul.default-list{
+  list-style: outside;
+  margin-left: 20px;
 }
 
 // wrapper settings

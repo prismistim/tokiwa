@@ -1,7 +1,8 @@
 <template lang="pug">
   .wrapper
     Header
-    nuxt
+    transition(mode="out-in" enter-active-class="fadeIn" leave-active-class="fadeOut")
+      nuxt
     Footer
 </template>
 

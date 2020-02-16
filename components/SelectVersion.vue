@@ -1,6 +1,6 @@
 <template lang="pug">
   .search-tool
-    .small-text VERSION
+    .small-text VERSION(☆12)
     select(:value="value", @input="$emit('input', $event.target.value)")
       option(v-for="(item, index) in options" v-bind:value="index") {{ item }}
 </template>
