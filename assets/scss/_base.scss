@@ -64,10 +64,9 @@ header{
     }
 
     span.tokiwa-version{
-      position: absolute;
-      top: 15px;
-      right: 60px;
+      margin-left: 3px;
       color: $dark-gray;
+      font-style: italic;
     }
   }
 }

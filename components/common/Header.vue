@@ -2,7 +2,7 @@
   header
     nav
       nuxt-link.n-brand(to="/") tokiwa
-      span.tokiwa-version Beta
+      span.tokiwa-version β
 </template>
 
 <script>
