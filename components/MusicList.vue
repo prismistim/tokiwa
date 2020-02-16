@@ -12,10 +12,10 @@
         :mirror_r = 'item.MIRROR_R'
         :ran_l = 'item.RAN_L'
         :ran_r = 'item.RAN_R'
-        :sran_l = 'item.SRAM_L'
-        :sran_r = 'item.SRAM_R'
-        :rran_l = 'item.RRAM_L'
-        :rran_r = 'item.RRAM_R'
+        :sran_l = 'item.S_RAN_L'
+        :sran_r = 'item.S_RAN_R'
+        :rran_l = 'item.R_RAN_L'
+        :rran_r = 'item.R_RAN_R'
         :key = 'item.ID'
       )
 </template>
@@ -32,7 +32,7 @@ export default {
     MusicListItem
   },
   computed: {
-    editList() {
+    editList: function() {
       const currentVar = parseInt(this.version) + 1
       return this.musics.filter(item => item.VER == currentVar)
     }

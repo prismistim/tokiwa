@@ -21,21 +21,21 @@
 
 <script>
 export default {
-  props: {
-    id: String,
-    version: String,
-    music_name: String,
-    difficulty: String,
-    flip: String,
-    mirror_l: String,
-    mirror_r: String,
-    ran_l: String,
-    ran_r: String,
-    sran_l: String,
-    sran_r: String,
-    rran_l: String,
-    rran_r: String
-  },
+  props: [
+    'id',
+    'version',
+    'music_name',
+    'difficulty',
+    'flip',
+    'mirror_l',
+    'mirror_r',
+    'ran_l',
+    'ran_r',
+    'sran_l',
+    'sran_r',
+    'rran_l',
+    'rran_r'
+  ],
   data() {
     return {
       leftOption: '',
