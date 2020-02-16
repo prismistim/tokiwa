@@ -5,16 +5,18 @@
       .item-diff(v-bind:class="displayDifficulty") {{ difficulty }}
       .item-name {{ music_name }}
     .item-use-option
-      .small-title Options
-      .badge(v-if="flip") FLIP
-      .option-disp-box
-        span.option-disp-side LEFT
-        .option-left
-          .badge(v-for="item in loadOptionLeft" v-bind:class="optionBadgeLeft") {{ item }}
-      .option-disp-box
-        span.option-disp-side RIGHT
-        .option-right
-          .badge(v-for="item in loadOptionRight" v-bind:class="optionBadgeRight") {{ item }}
+      table
+        tr
+          th FLIP
+          td.option-td-flip
+            .badge.badge-flip(v-if="flip") FLIP
+        tr
+          th LEFT
+          td.option-td-side
+            .badge(v-bind:class="optionBadgeLeft") {{ loadOptionLeft }}
+          th RIGHT
+          td.option-td-side
+            .badge(v-bind:class="optionBadgeRight") {{ loadOptionRight }}
 </template>
 
 <script>
@@ -53,12 +55,16 @@ export default {
                         this.ran_l ? 'RAN' : 
                         this.sran_l ? 'S-RAN' : 
                         this.rran_l ? 'R-RAN' : null
+
+      return this.leftOption
     },
     loadOptionRight: function () {
       this.rightOption = this.mirror_r ? 'MIRROR' : 
                           this.ran_r ? 'RAN' : 
                           this.sran_r ? 'S-RAN' : 
                           this.rran_r ? 'R-RAN' : null
+
+      return this.rightOption
     },
     optionBadgeLeft: function () {
       return {

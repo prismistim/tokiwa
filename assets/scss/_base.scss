@@ -8,34 +8,36 @@ ul{
   padding: 0!important;
 }
 
-.small-title{
+.small-text{
   text-align: center;
+  color: $dark-gray;
 }
 
 .badge{
-  margin-top: 5px;
+  display: inline-block;
+  margin: auto;
   padding: 3px 10px;
   border-radius: 5px;
 }
 
+.badge-flip{
+  background-color: $flip;
+}
+
 .badge-mirror{
-  border: solid 1px $light-left;
-  background-color: $left;
+  background-color: $mirror;
 }
 
 .badge-ran{
-  border: solid 1px $light-left;
-  background-color: $left;
+  background-color: $ran;
 }
 
 .badge-sran{
-  border: solid 1px $light-left;
-  background-color: $left;
+  background-color: $sran;
 }
 
 .badge-rran{
-  border: solid 1px $light-left;
-  background-color: $left;
+  background-color: $rran;
 }
 
 // wrapper settings
@@ -63,10 +65,13 @@ header{
 
     span.tokiwa-version{
       position: absolute;
-      right: 100px;
+      top: 15px;
+      right: 60px;
+      color: $dark-gray;
     }
   }
 }
+
 
 // container settings
 .container{
@@ -77,6 +82,31 @@ header{
 
   @include bp(lg){
     width: 55%;
+  }
+}
+
+.player-info{
+  margin: 20px 0;
+  padding: 10px;
+  border: solid 1px $tokiwa;
+  border-radius: 10px;
+  text-align: center;
+
+  .player-name{
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+}
+
+.search-tool{
+  select{
+    width: 100%;
+    margin: 10px 0;
+    outline: none;
+    border: solid 2px $tokiwa;
+    border-radius: 5px;
+    background: $deeper-black;
+    color: $tokiwa;
   }
 }
 
@@ -97,6 +127,7 @@ li.music-list-item{
 
     .item-name{
       display: inline-block;
+      font-size: 1.1em;
     }
 
     .item-diff{
@@ -120,34 +151,53 @@ li.music-list-item{
 
   .item-use-option{
     margin: 5px 0;
+    background-color: $dark-blue;
+    border-radius: 10px;
+    
+    table{
+      width: 100%;
+      border-collapse: collapse;
+
+      tr{
+        height: 50px;
+        border-top: solid 2px $deeper-black;
+
+        th{
+          width: 10%;
+          padding: 10px;
+          color: $dark-gray;
+        }
+  
+        td{
+          width: 40%;
+          text-align: center;
+        }
+      }
+    }
+
+    .option-flip{
+      width: 92%;
+      margin: 0 2%;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: $dark-blue;
+    }
 
     .option-disp-box{
       display: inline-block;
       vertical-align: top;
       width: 46%;
-      min-height: 70px;
+      height: 50px;
       margin: 0 2%;
+      padding: 10px;
       border-radius: 10px;
       background-color: $dark-blue;
-      text-align: center;
 
       .option-disp-side{
-        position: relative;
-        color: $dark-gray;
-      }
-
-      .option-disp-side:before{
-        content: '';
-        position: absolute;
         display: inline-block;
-        left: 50%;
-        bottom: -2px;
-        width: 100px;
-        height: 1px;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        background-color: $dark-gray;
-        border-radius: 2px;
+        width: 50px;
+        text-align: left;
+        color: $dark-gray;
       }
     }
   }
