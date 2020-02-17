@@ -26,14 +26,17 @@ import music_data from '@/static/sample.json'
 
 export default {
   props: {
-    version: String
+    version: {
+      type: String,
+      default: "26"
+    }
   },
   components: {
     MusicListItem
   },
   computed: {
     editList: function() {
-      const currentVar = parseInt(this.version) + 1
+      const currentVar = parseInt((!this.version) ? "26" : this.version) + 1
       return this.musics.filter(item => item.VER == currentVar)
     }
   },

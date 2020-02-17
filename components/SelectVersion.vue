@@ -3,6 +3,7 @@
     .small-text VERSION
     .alert 現在DP☆12のデータのみ表示できます
     select(:value="value", @input="$emit('input', $event.target.value)")
+      option(selected="true", disabled="disabled" value="") select VERSION
       option(v-for="(item, index) in options" v-bind:value="index") {{ item }}
 </template>
 
@@ -35,7 +36,7 @@ export default {
         '20 tricoro',
         '21 SPADA',
         '22 PENDUAL',
-        '23 Copula',
+        '23 copula',
         '24 SINOBUZ',
         '25 CANNON BALLERS',
         '26 Rootage',
