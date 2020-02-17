@@ -2,6 +2,8 @@
 
 > iidx option viewer
 
+![](./static/twitter.png)
+
 ## About "tokiwa"
 
 tokiwaはbeatmania IIDXの使用オプションを記録・閲覧するためのWebアプリです。beatmania IIDXでは、各曲で使用したオプションは保存されず、最後にプレーした際に使用したオプション設定が引き継がれます。いい部分もある反面、曲に対して自分の最適なオプションが分からなくなった、忘れてしまった時があるかもしれません。そこでオプションを保存・閲覧できるようにしたのがこのtokiwaです。
